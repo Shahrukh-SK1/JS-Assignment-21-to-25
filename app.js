@@ -73,3 +73,28 @@ var messReplaced = message.replace(/and/g, "&");
 document.write("Replaced message: " + messReplaced + "<br>");
 
 document.write("<br><br>");
+
+// Answer No. 9
+
+var str = "472";
+
+document.write("Value: " + str + "<br>");
+document.write("Type: " + typeof str + "<br>");
+
+
+var str = "472";
+var num = +str;
+
+document.write("Value: " + num + "<br>");
+document.write("Type: " + typeof num + "<br>");
+
+document.write("<br><br>");
+
+// Answer No. 10
+
+var userInput = prompt("Enter your input");
+
+document.write("User input: " + userInput + "<br>");
+document.write("Upper case: " + userInput.toUpperCase(userInput) + "<br>");
+document.write("<br><br>");
+
