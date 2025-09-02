@@ -97,4 +97,20 @@ var userInput = prompt("Enter your input");
 document.write("User input: " + userInput + "<br>");
 document.write("Upper case: " + userInput.toUpperCase(userInput) + "<br>");
 document.write("<br><br>");
+document.write("<br><br>");
 
+// Answer No. 11
+
+var userInp = prompt("Enter your input");
+
+document.write("User input: " + userInp + "<br>");
+
+var titleCase = userInp.charAt(0).toUpperCase() + userInp.slice(1).toLowerCase();
+
+document.write("title Case: " + titleCase + "<br>");
+
+document.write("<br><br>");
+
+
+
+// Answer No. 12
