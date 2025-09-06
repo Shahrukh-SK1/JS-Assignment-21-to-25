@@ -23,11 +23,11 @@
 
 
 // Answer No. 3
-    
+
 var word = "Pakistani";
 
 document.write("<br>");
-        
+
 document.write("String: " + word + "<br>");
 document.write("Index of 'n '" + word.indexOf("n") + "<br>");
 
@@ -59,7 +59,7 @@ document.write("<br><br>");
 var city = "Hyderabad"
 
 document.write("City: " + city + "<br>");
- 
+
 var cityRep = city.replace("Hyder", "Islam");
 document.write("After replacement: " + cityRep);
 document.write("<br><br>");
@@ -112,5 +112,56 @@ document.write("title Case: " + titleCase + "<br>");
 document.write("<br><br>");
 
 
-
 // Answer No. 12
+
+var num = 35.36;
+
+document.write("Number: " + num + "<br>");
+
+var result = num.toString().replace(".", "");
+
+document.write("Result: " + result);
+
+
+// Answer No. 13
+
+var inputUser = prompt("Enter Your User Name");
+var isValid = true;
+
+
+for (var i = 0; i < inputUser.length; i++) {
+    if (inputUser.charAt(i) === "@" || inputUser.charAt(i) === "!" || inputUser.charAt(i) === "," || inputUser.charAt(i) === ".") {
+        alert("Enter valid username")
+        isValid = false;
+        break;
+    }
+}
+
+if (isValid) {
+    alert("Your username is valid")
+}
+
+// Answer No. 14
+
+var a = ["cake", "apple pie", "cookie", "chips", "patties"]
+
+var inputUsr = prompt("Welcome to ABC Bakery, What do you want to order Sir/Madam?");
+inputUsr = inputUsr.toLowerCase();
+var found = false;
+var index = -1;
+
+for (var i = 0; i < a.length; i++) {
+    if (a[i].toLowerCase() === inputUsr) {
+        found = true;
+        index = i;
+        break;
+    }
+}
+    if (found) {
+        alert(inputUsr + " is available at index " + index + " in our bakery.");
+    } else {
+        alert("We are sorry. " + inputUsr + " is not available in our bakery.");
+    }
+
+
+// Answer No. 15
