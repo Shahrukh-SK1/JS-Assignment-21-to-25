@@ -123,6 +123,10 @@ var result = num.toString().replace(".", "");
 document.write("Result: " + result);
 
 
+document.write("<br><br>");
+document.write("<br><br>");
+
+
 // Answer No. 13
 
 var inputUser = prompt("Enter Your User Name");
@@ -165,3 +169,26 @@ for (var i = 0; i < a.length; i++) {
 
 
 // Answer No. 15
+
+
+
+// Answer No. 16
+
+var university = "University of Karachi";
+
+var uniArray = university.split("")
+
+for (var i = 0; i < uniArray.length; i++){
+    document.write(uniArray[i] + "<br>");
+}
+
+document.write("<br><br>");
+
+
+// Answer No. 17
+
+var usersInput = prompt("Enter your input");
+
+var lastChar = usersInput.charAt(usersInput.length -1);
+document.write(lastChar);
+
